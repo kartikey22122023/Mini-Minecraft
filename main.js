@@ -101,24 +101,50 @@ function my_keydown(e) {
         console.log("u key is pressed");
     }
 }
-// Define the starting width and height of the block images
+function up()
+{
+    if (player_y>=0 )
+    {
+        player_y = player_y -block_image_height;
+        console.log("Block image height =" + block_image_height);
+        console.log("when up arrow key is pressed, X = "+ player_x + "and Y =" + player_y);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+function down()
+{
+    if (player_y<=500 )
+    {
+        player_y = player_y +block_image_height;
+        console.log("Block image height =" + block_image_height);
+        console.log("when up arrow key is pressed, X = "+ player_x + "and Y =" + player_y);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+function left()
+{
+    if (player_x>=0 )
+    {
+        player_x = player_x -block_image_width;
+        console.log("Block image width =" + block_image_width);
+        console.log("when up arrow key is pressed, X = "+ player_x + "and Y =" + player_y);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+function right()
+{
+    if (player_x<=850 )
+    {
+        player_x = player_x +block_image_width;
+        console.log("Block image width =" + block_image_width);
+        console.log("when up arrow key is pressed, X = "+ player_x + "and Y =" + player_y);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
 
 
-
-// Define the starting x and y coordinates for the player
-
-
-
-// Define a variable named player_object to store object of the player image
-
-
-// Add a function named player_update() to add the player image
-
-
-
-
-
-
-
-// Add a function named new_image() to add the different images as per the specific keys pressed
 
